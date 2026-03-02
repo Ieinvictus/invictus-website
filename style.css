@@ -1,0 +1,133 @@
+/* ==============================
+GLOBAL RESET
+============================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  overflow:hidden;
+}
+
+/* ==============================
+HERO SECTION
+============================== */
+
+.launch-hero{
+  position:relative;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+}
+
+/* Background Image */
+
+.launch-bg{
+  position:absolute;
+  inset:0;
+  background:url("https://invictusexperiences.com/assets/DSC_5956.JPG") center/cover no-repeat;
+  z-index:1;
+  transform:scale(1.05);
+}
+
+/* Dark Overlay */
+
+.launch-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.85)
+  );
+  z-index:2;
+}
+
+/* Content */
+
+.launch-content{
+  position:relative;
+  z-index:3;
+  max-width:900px;
+  padding:20px;
+}
+
+/* Tag */
+
+.launch-tag{
+  font-size:14px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  opacity:.8;
+  margin-bottom:20px;
+}
+
+/* Main Title */
+
+.launch-title{
+  font-size:clamp(28px,5vw,60px);
+  font-weight:700;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.launch-title span{
+  background:linear-gradient(
+    90deg,
+    #9c7a52,
+    #d9be97,
+    #9c7a52
+  );
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* Description */
+
+.launch-description{
+  font-size:clamp(14px,2vw,20px);
+  font-weight:300;
+  line-height:1.8;
+  opacity:.9;
+  margin-bottom:40px;
+}
+
+/* Divider */
+
+.launch-divider{
+  width:120px;
+  height:2px;
+  margin:0 auto;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #d9be97,
+    transparent
+  );
+}
+
+/* ==============================
+RESPONSIVE
+============================== */
+
+@media(max-width:768px){
+
+  .launch-title{
+    font-size:28px;
+  }
+
+  .launch-description{
+    font-size:14px;
+  }
+
+}
